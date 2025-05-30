@@ -1,0 +1,10 @@
+name: summarizer
+
+conda_env: conda.yaml
+
+entry_points:
+    main:
+        parameters:
+            input_file: path
+        command: >
+            python run_summarizer.py --input_file {input_file}
